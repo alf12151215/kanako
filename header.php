@@ -29,38 +29,14 @@
 	<![endif]-->
     
     <link rel="javascript" type="text/css" media="all" href="<?php echo get_bloginfo('stylesheet_directory') ?>/jquery.selectbox.css" />
+    
     <script type="text/javascript" src="<?php echo get_bloginfo('stylesheet_directory') ?>/js/masonry.pkgd.js"></script>
-   
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.8.3.min.js"></script>
+    <script src='http://desandro.github.io/imagesloaded/imagesloaded.pkgd.js'></script>
+	
+	<script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
 
 
-    
-<script>
-docReady( function() {
-    
-
-  var container = document.querySelector('#fashion');
-  var msnry = new Masonry( container, {
-   columnWidth: 188,
-   itemSelector: '.c-item',
-   gutter: 20      
- });
-    
-  var container = document.querySelector('#beauty');
-  var msnry = new Masonry( container, {
-   columnWidth: 188,
-   itemSelector: '.b-item', 
-   gutter: 20
- });
-    
-  var container = document.querySelector('#advertising');
-  var msnry = new Masonry( container, {
-   columnWidth: 188,
-   itemSelector: '.a-item',
-   gutter: 20      
- });    
-    
-});    
-</script>    
     
 <script type="text/javascript" src="<?php echo get_bloginfo('stylesheet_directory') ?>/js/highlight.js"></script>
 

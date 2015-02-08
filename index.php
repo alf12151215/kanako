@@ -27,10 +27,9 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
-            
-            
+
 <!-- FASHION -->            
-    <section id="fashion" class="entry-content" >      
+    <section id="fashion" class="masonry" >      
     <?php if(get_field('entry', 135)): ?>
         
         <?php while(the_repeater_field('entry', 135)): ?>
@@ -64,11 +63,10 @@ get_header(); ?>
         <?php endif; ?>
             
  </section><!-- #entry-content -->
-<!-- FASHION -->             
-            
+<!-- FASHION --> 
 
 <!-- BEAUTY -->            
-    <section id="beauty" class="entry-content">      
+    <section id="beauty" class="masonry">      
     <?php if(get_field('entry', 61)): ?>
         
         <?php while(the_repeater_field('entry', 61)): ?>
@@ -108,7 +106,7 @@ get_header(); ?>
             
             
 <!-- ADVERTISING -->            
-    <section id="advertising" class="entry-content">      
+    <section id="advertising" class="masonry">      
     <?php if(get_field('entry', 152)): ?>
         
         <?php while(the_repeater_field('entry', 152)): ?>
