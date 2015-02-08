@@ -35,7 +35,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	margin: 0;
 	outline: 0;
 	padding: 0;
-	vertical-align: baseline;
+	vertical-align: top;
        -webkit-font-smoothing: antialiased;
 }
 
@@ -145,6 +145,12 @@ a.large img {
 #menu-main-menu li a:hover {
     color:#ED135A; }
 
+#menu-main-menu li a.active,
+#menu-main-menu li a.selected,
+#menu-main-menu li.focus
+{
+    color:#ED135A; }
+
 
 #menu-main-menu a, a:visited {
     color: #212121;
@@ -156,13 +162,32 @@ a.large img {
     letter-spacing: 1px;
     padding-top: 20px;}
 
-
-
-#beauty, #advertising, #fashion, #profile  {
+#fashion{
     display: block;
     float: left;
     padding: 70px 0px 110px;
+    margin-top: 0px;
     width: 852px;}
+
+#beauty, #advertising, #profile  {
+    display: block;
+    float: left;
+    padding: 60px 0px 110px;
+    margin-top: 0px;
+    width: 852px;}
+
+section a {
+    display: block;
+    background-color: #ED135A;}
+
+section a:hover img {
+ opacity: 1;
+   transition: opacity 200ms ease-in-out;
+   -moz-transition: opacity 200ms ease-in-out;
+   -webkit-transition: opacity 200ms ease-in-out;}
+
+section a:hover img {
+    opacity: 0.4;}
 
 
 #profile {
