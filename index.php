@@ -149,6 +149,27 @@ get_header(); ?>
             
 <!-- PROFILE -->                         
             <section id="profile" class="entry-content">
+
+<?php if( have_rows('profile', 165) ): ?> 
+                
+<ul class="profile_list">
+
+	<?php while( have_rows('profile', 165) ): the_row(); 
+		// vars
+		$textjp = get_sub_field('jp');
+		$texten = get_sub_field('en');
+		?>
+
+		<li>
+            <span class="jp"><?php echo $textjp; ?></span>
+            <span class="en"><?php echo $texten; ?></span>
+		</li>
+	<?php endwhile; ?>
+	</ul>                                
+<?php endif; ?>
+                
+                              
+                
                 <?php 
                     $id=165; $post = get_post($id); $content = apply_filters('the_content', $post->post_content); echo $content;   
                     ?>

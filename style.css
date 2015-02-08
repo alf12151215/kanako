@@ -158,7 +158,7 @@ a.large img {
 
 
 
-#beauty, #advertising, #fashion {
+#beauty, #advertising, #fashion, #profile  {
     display: block;
     float: left;
     padding: 70px 0px 110px;
@@ -168,6 +168,23 @@ a.large img {
 #profile {
     min-height: 600px;}
 
+#profile .profile_list {
+    list-style: none;
+    font-size: 12px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    line-height: 1.7;}
+
+#profile .profile_list .en {
+    padding-left:40px; }
+
+#profile h2 {
+    margin: 50px 0px 20px 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    }
+
 #profile p {
     width: 600px;
     margin: 0px 0px 20px 10px;
@@ -175,7 +192,10 @@ a.large img {
     font-size: 14px;
     line-height: 170%;
     color: #212121;
+    letter-spacing: 1px;
+    font-size: 12px;
 }
+
 
 @media only screen 
 and (min-device-width : 320px) 
