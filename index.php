@@ -53,8 +53,8 @@ get_header(); ?>
             ?>
 
                         <a href="<?php echo $url; ?>" title="<?php echo $gname;?>" rel="lightbox[fashion]" class="c-item <?php echo $size; ?>">
-                            <!--<img data-original="<?php // echo $thumb; ?>"  />-->
-                            <img data-original="<?php echo $thumb; ?>"  />
+                            <!--<img data-original="<?php echo $thumb; ?>"  />-->
+                            <img src="<?php echo $thumb; ?>"  />
                             <?php endif; ?>     
                         </a>
         
@@ -90,7 +90,7 @@ get_header(); ?>
             ?>
 
                         <a href="<?php echo $url; ?>" title="<?php echo $gname; ?>" rel="lightbox[beauty]" class="b-item <?php echo $size; ?>">
-                            <img data-original="<?php echo $thumb; ?>"  />
+                            <img src="<?php echo $thumb; ?>"  />
                             
                             <?php endif; ?> 
                                
@@ -130,7 +130,7 @@ get_header(); ?>
             ?>
 
                         <a href="<?php echo $url; ?>" title="<?php echo $gname; ?>" rel="lightbox[advertising]" class="a-item <?php echo $size; ?>">
-                            <img data-original="<?php echo $thumb; ?>"  />
+                            <img src="<?php echo $thumb; ?>"  />
                             
                             <?php endif; ?> 
                                                     
@@ -174,7 +174,7 @@ get_header(); ?>
               </section>
 <!-- PROFILE -->  
             
-              
+             
             
 		</div><!-- #content -->
 	</div><!-- #primary -->
