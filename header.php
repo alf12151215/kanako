@@ -30,9 +30,13 @@
     
     <link rel="javascript" type="text/css" media="all" href="<?php echo get_bloginfo('stylesheet_directory') ?>/jquery.selectbox.css" />
     
-    <script type="text/javascript" src="<?php echo get_bloginfo('stylesheet_directory') ?>/js/masonry.pkgd.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.8.3.min.js"></script>
+    <script src="<?php echo get_bloginfo('stylesheet_directory') ?>/js/masonry.pkgd.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.8.3.min.js"></script>
+    <!--<script type="text/javascript" src="<?php // echo get_template_directory_uri(); ?>/js/jquery.lazyload.min.js"></script>-->
+    <script type="text/javascript" src="https://cdn.rawgit.com/tuupola/jquery_lazyload/master/jquery.lazyload.min.js"></script>
     <script src='http://desandro.github.io/imagesloaded/imagesloaded.pkgd.js'></script>
+    
+   
 	
 	<script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
 

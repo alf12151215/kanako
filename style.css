@@ -169,7 +169,7 @@ a.large img {
     margin-top: 0px;
     width: 852px;}
 
-#beauty, #advertising, #profile  {
+#beauty, #advertising, #profile, #contact  {
     display: block;
     float: left;
     padding: 60px 0px 110px;
@@ -177,8 +177,17 @@ a.large img {
     width: 852px;}
 
 section a {
-    display: block;
     background-color: #ED135A;}
+
+section#profile a {
+    background-color: #fff;
+    color:#ED135A;
+    text-decoration: none;}
+
+section#profile a:hover {
+    background-color: #fff;
+    color:#ED135A;
+    text-decoration: underline;}
 
 section a:hover img {
  opacity: 1;

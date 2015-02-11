@@ -53,8 +53,8 @@ get_header(); ?>
             ?>
 
                         <a href="<?php echo $url; ?>" title="<?php echo $gname;?>" rel="lightbox[fashion]" class="c-item <?php echo $size; ?>">
-                            <img src="<?php echo $thumb; ?>"  />
-                            
+                            <!--<img data-original="<?php // echo $thumb; ?>"  />-->
+                            <img data-original="<?php echo $thumb; ?>"  />
                             <?php endif; ?>     
                         </a>
         
@@ -90,7 +90,7 @@ get_header(); ?>
             ?>
 
                         <a href="<?php echo $url; ?>" title="<?php echo $gname; ?>" rel="lightbox[beauty]" class="b-item <?php echo $size; ?>">
-                            <img src="<?php echo $thumb; ?>"  />
+                            <img data-original="<?php echo $thumb; ?>"  />
                             
                             <?php endif; ?> 
                                
@@ -130,7 +130,7 @@ get_header(); ?>
             ?>
 
                         <a href="<?php echo $url; ?>" title="<?php echo $gname; ?>" rel="lightbox[advertising]" class="a-item <?php echo $size; ?>">
-                            <img src="<?php echo $thumb; ?>"  />
+                            <img data-original="<?php echo $thumb; ?>"  />
                             
                             <?php endif; ?> 
                                                     
@@ -166,15 +166,15 @@ get_header(); ?>
 		</li>
 	<?php endwhile; ?>
 	</ul>                                
-<?php endif; ?>
-                
-                              
+<?php endif; ?>                  
                 
                 <?php 
                     $id=165; $post = get_post($id); $content = apply_filters('the_content', $post->post_content); echo $content;   
                     ?>
               </section>
-<!-- PROFILE -->             
+<!-- PROFILE -->  
+            
+              
             
 		</div><!-- #content -->
 	</div><!-- #primary -->
